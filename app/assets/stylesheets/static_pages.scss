@@ -1,0 +1,50 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.color{
+  background-color:rgba(166, 255, 0, 0.301);
+  color:black;
+}
+
+.home{
+  font-family: 'Gloria Hallelujah', cursive;
+  position: relative;
+}
+.nav-item:active{
+  color: black;
+  background-color:grey;
+}
+
+
+.home img{
+  width: 1420px;
+  height: 800px;
+}
+
+.home h1{
+  margin: 0 2em;
+  font-size: 200px;
+  position: absolute;
+  top: 100px;
+  color: #540900;
+  -webkit-animation: random 30s infinite;
+}
+  
+p{
+  margin: 50px;
+  line-height: 200%;
+}
+
+.navbar{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+@keyframes random{
+  0% {color: rgb(63, 16, 11)}
+  15% {color: rgb(138, 39, 28)}
+  30% {color: rgb(192, 45, 29)}
+  45% {color: rgb(235, 60, 41)}
+  60% {color: rgb(247, 99, 83)  }
+  75% {color: rgb(243, 121, 107)}
+  90%  {color: rgb(240, 154, 145)}
+}

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+              
+      <h1><%= @restuarant.name.titleize%></h1>
+
+      <h4>Description: </h1>
+      <p><%= @restuarant.description.capitalize %></p>
+      <h4> Rating: <%= @restuarant.rating %></h4>
+      <h4> <i class="material-icons">
+      favorite
+      </i><%= @restuarant.likes %></h4>
+
+      <%= link_to 'Back', restuarants_path %>
+      <%= link_to 'Edit', edit_restuarant_path(@restuarant.id) %>
+      </div>
+  </body>
+</html>

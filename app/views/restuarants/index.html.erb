@@ -1,0 +1,24 @@
+<html>
+  <body>
+      
+      <div class="container">
+      <h1>Restaurants</h1>
+
+      <h4><%=link_to 'Add Restaurant', new_restuarant_path %></h4>
+      <div class="header row">
+      <div class="col-6 col-md-4">Name</div>
+      <div class="col-6 col-md-4">Location</div>
+      <div class="col-6 col-md-4">Rating</div>
+    </div>
+        <% @restuarants.each do |e|%>
+          <div class="row">
+          <div class="col-6 col-md-4"><%=e.name.titleize  %></div>
+          <div class="col-6 col-md-4"><%= e.location.titleize %></div>
+          <div class="col-6 col-md-4"><%= e.rating %></div>
+          <div class="col-6 col-md-4"><%= link_to 'More..', restuarant_path(e)%></div>
+          <div class="col-6 col-md-4"><%= link_to 'Delete', e, method: :delete %></div>
+          </div>
+        <% end %>
+      </div>
+  </body>
+</html>

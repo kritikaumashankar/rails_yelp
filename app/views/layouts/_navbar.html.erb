@@ -1,0 +1,34 @@
+<html>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #EA9380;">
+      <%= link_to 'Yelp', root_path, {class: 'navbar-brand'}%>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+          <%= link_to 'Home', root_path, {class: 'nav-link'}%><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <%= link_to 'About', about_path, {class: 'nav-link'} %>
+          </li>
+          <li class="nav-item">
+          <%= link_to 'Restaurants', restuarants_path, {class: 'nav-link'} %>
+          </li>
+
+        </ul>
+      </div>
+      <nav class="navbar navbar-light">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 color" type="submit">Search</button>
+      </form>
+    </nav>
+    </nav>
+  </body>
+</html>
+
